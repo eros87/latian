@@ -1,0 +1,217 @@
+/**** Variables ****/
+body {
+  margin: 50px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+h2 {
+  margin: 30px 0;
+}
+.btn {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-right: 20px;
+  -webkit-transition: 1.5s;
+          transition: 1.5s;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  -webkit-transition: 1.5s;
+          transition: 1.5s;
+  z-index: -1;
+  background: transparent;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+}
+/**** from left to right style ****/
+.btn-l-r {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+.btn-l-r:hover {
+  color: #ffffff;
+}
+.btn-l-r:hover:after {
+  background: #2196f3;
+  width: 100%;
+}
+.btn-l-r:after {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+}
+/**** from right to left style ****/
+.btn-r-l {
+  color: #4caf50;
+  border-color: #4caf50;
+}
+.btn-r-l:hover {
+  color: #ffffff;
+}
+.btn-r-l:hover:after {
+  background: #4caf50;
+  width: 100%;
+}
+.btn-r-l:after {
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+}
+/**** from top to bottom style ****/
+.btn-t-b {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+.btn-t-b:hover {
+  color: #ffffff;
+}
+.btn-t-b:hover:after {
+  background: #e91e63;
+  height: 100%;
+}
+.btn-t-b:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+}
+/**** from bottom to top style ****/
+.btn-b-t {
+  color: #9c27b0;
+  border-color: #9c27b0;
+}
+.btn-b-t:hover {
+  color: #ffffff;
+}
+.btn-b-t:hover:after {
+  background: #9c27b0;
+  height: 100%;
+}
+.btn-b-t:after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+}
+/**** Animated border ****/
+.btn-animated-border {
+  color: #00bcd4;
+}
+.btn-animated-border:hover {
+  color: #008fa1;
+}
+.btn-animated-border:after {
+  top: -1px;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #008fa1;
+}
+.btn-animated-border:hover:after {
+  width: 100%;
+}
+.btn-animated-border:before {
+  top: 0;
+  left: -1px;
+  width: 100%;
+  height: 0%;
+  background: transparent;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: #008fa1;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.btn-animated-border:hover:before {
+  height: 100%;
+}
+/**** General rotate style ****/
+.btn-rotate {
+  color: #009688;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.btn-rotate:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #009688;
+}
+.btn-rotate:hover {
+  color: #ffffff;
+  border-color: #009688;
+}
+.btn-rotate:hover:after {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+/**** Rotate top left ****/
+.rotate-t-l {
+  color: #009688;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+.rotate-t-l:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+}
+/**** Rotate top right ****/
+.rotate-t-r:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+}
+/**** Rotate bottom left ****/
+.rotate-b-l:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+/**** Rotate bottom right ****/
+.rotate-b-r:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+.btn-small {
+  padding: 2px 7px;
+}
+.btn-medium {
+  padding: 7px 13px;
+}
+.btn-large {
+  padding: 12px 18px;
+}
+.btn-huge {
+  padding: 18px 25px;
+}
